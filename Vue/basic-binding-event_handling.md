@@ -39,7 +39,7 @@ We use methods for when we want something to happen when some kind of action or 
 
 ```html
 <div id="app">
-    <button v-bind:class="buttonClasses" v-on:click="toggle">Click Me</button>
+    <button :class="buttonClasses" v-on:click="toggle">Click Me</button>
 </div>
 
 <script>
@@ -63,7 +63,7 @@ Let's say we want to change the text color of the button when it is clicked. Usi
 
 ```html
 <div id="app">
-    <button v-bind:class="buttonClasses" v-on:click="toggle">Click Me</button>
+    <button :class="buttonClasses" v-on:click="toggle">Click Me</button>
 </div>
 
 <script>
@@ -109,7 +109,7 @@ We then can remove the buttonClasses from the data attribute and then use the *v
 
 ```html
 <div id="app">
-    <button v-bind:class="active ? 'text-red-600' : 'text-teal-400'" @click="toggle">Click Me</button>
+    <button :class="active ? 'text-red-600' : 'text-teal-400'" @click="toggle">Click Me</button>
 </div>
 
 <script>
