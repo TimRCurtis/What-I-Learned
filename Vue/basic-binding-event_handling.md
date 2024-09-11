@@ -109,7 +109,7 @@ We then can remove the buttonClasses from the data attribute and then use the *v
 
 ```html
 <div id="app">
-    <button v-bind:class="active ? 'text-red-600' : 'text-teal-400'" v-on:click="toggle">Click Me</button>
+    <button v-bind:class="active ? 'text-red-600' : 'text-teal-400'" @click="toggle">Click Me</button>
 </div>
 
 <script>
