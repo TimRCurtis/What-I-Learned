@@ -69,7 +69,9 @@ You can see that we removed the checkbox input, but now we will add it back by p
 ```
 
 ## v-model
-Right now we don't have two way binding so nothing happens when we check the box as if we completed that assignment. To get this to work we will need to use `v-model` inside the input tag. This will bind the check status input to the `complete: false` property in the assignments component.
+Right now we don't have two way binding so nothing happens when we check the box as if we completed that assignment. To get this to work we will need to use `v-model` inside the input tag. This will bind the check status input to the `complete: false` property in the assignments component. This will update that property in real time.
+
+When you are working with forms and inputs you will always use `v-model` to bind them to data you have else where.
 
 ```html
 <div id="app">
