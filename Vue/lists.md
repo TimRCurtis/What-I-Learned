@@ -34,7 +34,7 @@ Each item the array will need the name and need a way to track if the assignment
 </script>
 ```
 
-Now we can use `v-for` on the `<li>` elements to render each item in the assignments component array. We will echo out each assignment name in the assignments component inside the `{{}}` known as mustash syntax. This is how you can generate data dynamically.
+Now we can use `v-for` on the `<li>` elements to render each item in the assignments component array. We will echo out each assignment name in the assignments component inside the `{{}}` known as mustash syntax. This is how you loop through an array and display the data dynamically.
 
 ```html
 <div id="app">
@@ -71,7 +71,7 @@ You can see that we removed the checkbox input, but now we will add it back by p
 ## v-model
 Right now we don't have two way binding so nothing happens when we check the box as if we completed that assignment. To get this to work we will need to use `v-model` inside the input tag. This will bind the check status input to the `complete: false` property in the assignments component. This will update that property in real time.
 
-When you are working with forms and inputs you will always use `v-model` to bind them to data you have else where.
+> When you are working with forms and inputs you will always use `v-model` to bind them to data you have else where.
 
 ```html
 <div id="app">
