@@ -2,7 +2,7 @@
 
 Continuing the example from list.md we currently can check the boxes as we complete the assignments, but nothing happens except that we are tracking if the assignments complete proprty is true or fasle.
 
-This is where computed properties comes into play. FOr this example, we want the items that we complete to move to a new list of completed assignments.
+This is where computed properties comes into play. For this example, we want the items that we complete to move to a new list of completed assignments.
 
 ```html
 <div id="app">
