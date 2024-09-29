@@ -60,3 +60,51 @@ export default {
     },
 }
 ```
+
+When setting class bindings, you can use a string, an array, or an object. We are going to use the object syntax. So we first bind the class property and put all the classes inside of `{}` with a key.
+
+```js
+export default {
+    template: `
+        <button 
+            :class="{
+                'bg-gray-200 hover:bg-gray-400 border rounded p-5 py-2': true
+            }">
+            <slot />
+        </button>
+    `,
+
+    props: {
+        type: {
+            type: String,
+            default: 'primary'
+        }
+    },
+}
+```
+
+Now for this button we can set the padding, border radius, and border as default while setting the the different colors for the primary and secondary types.
+
+```js
+export default {
+    template: `
+        <button 
+            :class="{
+                'border rounded p-5 py-2': true,
+                'bg-gray-200 hover:bg-gray-400': type === 'primary',
+                'bg-blue-200 hover:bg-blue-400': type === 'secondary'
+            }">
+            <slot />
+        </button>
+    `,
+
+    props: {
+        type: {
+            type: String,
+            default: 'primary'
+        }
+    },
+}
+```
+
+We can now configure the style of the button based on an incoming prop value. If we need to access a prop, we refernce the name. If we need to access a data property, we refernce the name.
